@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -la --sort=extension --group-directories-first . .. /boot
+ls -al . .. /boot

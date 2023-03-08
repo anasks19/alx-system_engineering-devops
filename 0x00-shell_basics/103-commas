@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -1a | awk '{print $0","}' | sed 's/[^\/]*$/&\//' | tr -d '\n'; echo
+ls -1ap | sed ':a;N;$!ba;s/\n/, /g' | sed 's/,$/\n/'

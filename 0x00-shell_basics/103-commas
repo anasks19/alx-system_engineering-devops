@@ -1,0 +1,2 @@
+#!/bin/bash
+ls -1a | awk '{print $0","}' | sed 's/[^\/]*$/&\//' | tr -d '\n'; echo

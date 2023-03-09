@@ -1,3 +1,3 @@
-Build and Write scripts with shell **
+** Learning Shell Scripts with ME **
 Shell commands
 Shell permissions

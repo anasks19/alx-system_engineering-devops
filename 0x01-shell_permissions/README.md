@@ -27,4 +27,16 @@ The 11-directories_permissions is an executable file. The script in this file, a
 The 12-directory_permissions contains a script that creates a directory named my_dir with -m option which allows us to specifie the mode (or permissions) of the directory.
 
 The 13-change_group is an executable file. Once the script run, it change the group owner of hello file from root to school.
- 
+
+The 100-change_owner_and_group is an executable file. This command uses chown (short for "change owner") to change the owner and group owner for all files 
+and directories in the current working directory (.). The -R option makes the operation recursive (i.e., it applies to all files and directories in subdirectories as well). 
+The vincent:staff argument specifies the new owner and group owner, and the .* argument selects all files and directories in the current working directory (excluding hidden 
+files and directories starting with .). The sudo command is used to run the command as a superuser (i.e., with root privileges) 
+in case the current user doesn't have permission to change the owner or group owner.
+
+The 101-symbolic_link_permissions is an executable file. This script will allow you to change the owner and the group owner of a symbolic link in your directory.
+
+The 102-if_only is an executable file, containing a script that changes the current owner of a file only if it mathches the current owner of the specific file; in our case, the script 
+changes the owner of hello file to betty only if it matches guillaume as the name if the current owner of the file.
+
+The 103-Stars_Wars is an executable file using telnet protocol to desplay the SatrWars IV in the terminal once the script is running. 
